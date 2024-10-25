@@ -1,6 +1,6 @@
 // components/Leftbar.js
 const Leftbar = () => {
-  const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"];
+  const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
 
   return (
     <div className="flex flex-col gap-2 p-2">

@@ -10,20 +10,23 @@ interface CardItem {
 
 interface TabProps {
   cards: CardItem[];
+  title: string;
 }
 
-const TabOne: React.FC<TabProps> = ({ cards }) => {
+const TabOne: React.FC<TabProps> = ({ cards, title }) => {
   return (
-    <div className="flex w-full h-full">
-      {cards.map((card) => (
-        <div key={card.number} className="flex-1 ">
+    <div className="flex flex-col w-full gap-4">
+      <h1 className="text-2xl font-bold mb-1">{title}</h1>
+      <div className="flex flex-wrap gap-4">
+        {cards.map((card) => (
           <CardOne
+            key={card.number}
             number={card.number}
             imageSrc={card.imageSrc}
             text={card.text}
           />
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
