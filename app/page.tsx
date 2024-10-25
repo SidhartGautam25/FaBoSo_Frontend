@@ -35,7 +35,7 @@ export default function Home() {
     <div className="flex flex-col h-screen">
       {/* Header */}
       <Header />
-
+      {/* dev branch */}
       {/* Main content (Leftbar and rest of the content) */}
       <div className="flex flex-grow min-h-0">
         <Leftbar />
@@ -43,7 +43,6 @@ export default function Home() {
         {/* Main content area */}
         <div className="flex-grow p-4 overflow-hidden">
           {/* Tab with dynamic cards */}
-          <Tab cards={cards} />
           <Tab cards={cards} />
         </div>
       </div>
